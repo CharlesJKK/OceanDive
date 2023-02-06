@@ -1,0 +1,84 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.header > a{
+    color: #1F7CB0;
+    font-size: 1.5rem;
+    line-height: 2.4;
+    font-family: 'Poppins', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header a span{
+    color: #2C4A84;
+    font-weight: 800;
+    font-family: 'Poppins', serif;
+}
+
+.header-menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Poppins', serif;
+    font-weight: 400;
+    color: #000;
+    line-height: 2.4;
+    gap: 32px;
+}
+
+.header-menu li a img{
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #B4E8D5;
+    border: 1px solid #3F3F3F;
+}
+
+.header-menu li a img:hover{
+    background-color: #8bc5e7;
+}
+
+.buttonheader{
+    padding: 8px 0;
+    position: relative;
+}
+
+.buttonheader::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background-color: #1F7CB0;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.buttonheader:hover::after{
+    width: 100%;
+}
+
+@media (max-width: 800px){
+    .header{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .header-menu{
+        justify-content: center;
+    }
+
+    .buttonheader{
+        padding: 15px;
+        border-radius: 4px;
+        color: #fff;
+        background-color: #0D8587;
+    }
+}

@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    color: #fff;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+img[src$=".jpg"]{
+    border-radius: 4px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
