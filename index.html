@@ -15,7 +15,7 @@
 <body>
     <header class="header container">
         <a href="./">
-            Ocean<span>Dive</span>
+            <img src="./imgs/logo.svg" alt="ícone oceandive">
         </a>
         <nav aria-label="primaria">
             <ul class="header-menu">
@@ -23,11 +23,44 @@
                 <li><a href="./" class="buttonheader">Oceano</a></li>
                 <li><a href="./" class="buttonheader">Presentes</a></li>
                 <li><a href="./" class="buttonheader">Sobre nós</a></li>
-                <li>
-                    <a href="./"><img src="./imgs/loginbtn.svg" alt="Boneco cinza de login"></a>
-                </li>
+                <li><a href="./" class="buttonheader">ENTRAR</a></li>
             </ul>
         </nav>
     </header>
+    <main class="introducao-bg">
+        <div class="introducao-sobre container">
+            <h1>Sinta o oceano por fora e por <span class="color-blue">dentro</span></h1>
+            <p>Bem-vindo ao mundo inexplorado do oceano, onde <span class="color-blue">você</span> poderá vivenciar o universo marinho. Nossos especialistas e equipamentos tornarão seu mergulho seguro e memorável.</p>
+            <div class="introducao-avaliacoes">
+                <img src="./imgs/avaliacoes.svg" alt="Fotos dos rostos dos usuários do site">
+                <strong>+ de 100 mil usuários.</strong>
+            </div>
+        </div>
+        <div class="introducao-passagem container">
+            <form action="./" class="passagem-forms">
+                <div>
+                    <img src="./imgs/icons/map.svg" alt="icone de um mapa">
+                    <label for="location" aria-label="local"></label>
+                    <input type="text" id="location" name="location" placeholder="Quero mergulhar em">
+                </div>
+                <div>
+                    <img src="./imgs/icons/calendar.svg" alt="icone de um calendário">
+                    <label for="date" aria-label="data"></label>
+                    <input type="text" id="date" name="date" placeholder="Dia">
+                </div>
+                <div>
+                    <img src="./imgs/icons/clock.svg" alt="icone de um relógio">
+                    <label for="number" aria-label="número"></label>
+                    <input type="text" id="date" name="date" placeholder="Horário">
+                </div>
+                <div>
+                    <img src="./imgs/icons/group.svg" alt="icone de um grupo de pessoas">
+                    <label for="number" aria-label="número"></label>
+                    <input type="text" id="number" name="number" min="1" max="15" placeholder="Pessoas">
+                </div>
+                <button>Comprar</button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
