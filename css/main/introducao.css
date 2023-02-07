@@ -15,7 +15,7 @@
 .introducao-sobre h1{
     padding-top: 20px;
     font-size: 2.75rem;
-    width: 20ch
+    width: 25ch
 }
 
 .introducao-sobre h1,
@@ -71,6 +71,7 @@
 .passagem-forms input{
     background-color: #EAEAEA;
     padding: 14px 10px;
+    width: 80%;
     font-family: 'Poppins', serif;
     font-weight: 600;
 }
