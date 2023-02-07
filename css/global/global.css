@@ -7,6 +7,7 @@
 
 body{
     color: #fff;
+    background: #F8F8FF;
 }
 
 img{
@@ -26,4 +27,23 @@ ul{
 a{
     text-decoration: none;
     color: inherit;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button{ 
+    -webkit-appearance: none;
+    
+}
+input[type=number]{ 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+input{
+    border: none;
 }
