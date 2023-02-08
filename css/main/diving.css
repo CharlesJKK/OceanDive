@@ -63,6 +63,7 @@
 }
 
 .diving-image{
+    
     position: relative;
 }
 
@@ -146,6 +147,6 @@
     }
 
     .diving-description p{
-        width: auto;
+        word-break: break-word;
     }
 }

@@ -108,6 +108,6 @@
     }
 
     .packages-description p{
-        width: auto;
+        word-break: break-word;
     }
 }
