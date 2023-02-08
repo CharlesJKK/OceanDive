@@ -1,0 +1,147 @@
+.diving-content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 62px;
+    padding-bottom: 62px;
+    gap: 40px;
+}
+
+.diving-content h2{
+    font-size: 1.75rem;
+    color: #22223C;
+}
+
+.diving-content h2::after{
+    content: "";
+    display: block;
+    width: 122px;
+    height: 2px;
+    background-color: #166064;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+.diving-content > p{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    color: #47475F;
+}
+
+.diving-content p a{
+    text-decoration: underline;
+    color: inherit;
+}
+
+.diving-list{
+    display: flex;
+    gap: 80px;
+}
+
+
+.diving-option{
+    border-radius: 4px;
+    background: #001F27;
+    height: max-content;
+}
+
+.diving-container{
+    padding: 12px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.diving-container > p{
+    color: #D7FFF1;
+    font-size: 0.75rem;
+}
+
+.diving-container h3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.diving-image{
+    position: relative;
+}
+
+.heart{
+    position: absolute;
+    padding: 24px;
+    right: 10px;
+    top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: url("../../imgs/divings/heart.svg") no-repeat center, rgba(248, 245, 245, 0.7);
+}
+
+.heart:hover{
+    background: url("../../imgs/divings/heartFill.svg") no-repeat center, rgba(248, 245, 245, 0.7);
+}
+
+.diving-description{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.diving-description p{
+    width: 30ch;
+    color: #969696;
+    word-break: normal;
+}
+
+.diving-rating{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.diving-rating p{
+    color: #fff;
+}
+
+.button-diving{
+    align-self: center;
+    background-color: #0D8587;
+    border-radius: 4px;
+    width: max-content;
+    padding: 8px 12px;
+}
+
+@media (max-width: 1200px){
+    .diving-list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px){
+    
+    .diving-content > p{
+        display: initial;
+    }
+
+    .diving-content > p a{
+        display: block;
+    }
+}
+
+@media (max-width: 400px){
+    .diving-image img{
+        object-fit: cover;
+    }
+
+    .diving-container h3 {
+        display: block;
+    }
+
+    .diving-container h3 span{
+        display: block;
+    }
+
+    .diving-description p{
+        width: auto;
+    }
+}
