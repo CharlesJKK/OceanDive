@@ -18,20 +18,8 @@
     width: 25ch
 }
 
-.introducao-sobre h1,
-.introducao-sobre h1 span{
-    font-weight: 700;
-    font-family: 'Source Serif Pro', serif;
-}
-
-.introducao-sobre p span{
-    font-weight: 600;
-    font-family: 'Poppins', serif;
-}
-
 .introducao-sobre p{
     font-size: 1rem;
-    font-family: 'Poppins', serif;
     width: 70ch;
 }
 
@@ -39,11 +27,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.introducao-avaliacoes strong{
-    font-family: 'Poppins', serif;
-    font-weight: 600;
 }
 
 .introducao-passagem{

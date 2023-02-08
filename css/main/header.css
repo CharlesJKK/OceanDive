@@ -22,8 +22,7 @@
 
 .header-menu li a{
     font-family: 'Poppins', serif;
-    font-weight: inherit;
-    
+    font-weight: inherit; 
 }
 
 .header-menu li:last-child{
