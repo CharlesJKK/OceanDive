@@ -1,4 +1,8 @@
-.diving-content{
+.diving-bg{
+    padding-bottom: 60px;
+}
+
+.diving-header{
     display: flex;
     flex-direction: column;
     padding-top: 62px;
@@ -6,12 +10,12 @@
     gap: 40px;
 }
 
-.diving-content h2{
+.diving-header h2{
     font-size: 1.75rem;
     color: #22223C;
 }
 
-.diving-content h2::after{
+.diving-header h2::after{
     content: "";
     display: block;
     width: 122px;
@@ -21,14 +25,14 @@
     border-radius: 4px;
 }
 
-.diving-content > p{
+.diving-header p{
     display: flex;
     justify-content: space-between;
     gap: 8px;
     color: #47475F;
 }
 
-.diving-content p a{
+.diving-header p a{
     text-decoration: underline;
     color: inherit;
 }
@@ -36,6 +40,11 @@
 .diving-list{
     display: flex;
     gap: 80px;
+    padding: 0 20px 20px 20px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
 }
 
 
@@ -43,6 +52,8 @@
     border-radius: 4px;
     background: #001F27;
     height: auto;
+    flex: 1;
+    width: max-content;
 }
 
 .diving-container{
@@ -93,12 +104,13 @@
 .diving-description p{
     width: 30ch;
     color: #969696;
-    word-break: normal;
+    word-break: break-word;
 }
 
 .diving-rating{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 8px;
 }
 
@@ -118,29 +130,30 @@
     background-color: #166064;
 }
 
-@media (max-width: 1200px){
-    .diving-list{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
 @media (max-width: 800px){
+
+    .diving-list{
+        gap: 30px;
+    }
     
-    .diving-content > p{
+    .diving-header > p{
         display: initial;
     }
 
-    .diving-content h2::after{
+    .diving-header h2::after{
         display: none;
     }
 
-    .diving-content > p a{
+    .diving-header > p a{
         display: block;
     }
 }
 
 @media (max-width: 400px){
+
+    .diving-image{
+        display: none;
+    }
 
     .diving-container h3 {
         display: block;
@@ -152,6 +165,6 @@
 
     .diving-description p{
         word-break: break-word;
-        width: auto;
+        width: 20ch;
     }
 }
