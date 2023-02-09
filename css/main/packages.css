@@ -44,7 +44,7 @@
 
 .packages-option{
     border-radius: 4px;
-    background: #023E4F;
+    background: #0D8587;
 }
 
 .packages-option:hover{
@@ -63,24 +63,13 @@
     font-size: 0.75rem;
 }
 
-.packages-container h3{
-    display: flex;
-    justify-content: space-between;
-}
-
 .packages-image{
     position: relative;
 }
 
-.packages-description{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
 .packages-description p{
     width: 28ch;
-    color: #A7A7A7;
+    color: #cecccc;
     word-break: normal;
 }
 
@@ -99,6 +88,10 @@
 
     .packages-content > p a{
         display: block;
+    }
+
+    .packages-content h2::after{
+        display: none;
     }
 }
 

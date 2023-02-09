@@ -128,6 +128,10 @@
         display: initial;
     }
 
+    .diving-content h2::after{
+        display: none;
+    }
+
     .diving-content > p a{
         display: block;
     }
