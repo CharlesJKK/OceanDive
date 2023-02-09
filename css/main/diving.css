@@ -42,7 +42,7 @@
 .diving-option{
     border-radius: 4px;
     background: #001F27;
-    height: max-content;
+    height: auto;
 }
 
 .diving-container{
@@ -63,8 +63,11 @@
 }
 
 .diving-image{
-    
     position: relative;
+}
+
+.diving-image img{
+    width: 100%;
 }
 
 .heart{
@@ -138,9 +141,6 @@
 }
 
 @media (max-width: 400px){
-    .diving-image img{
-        object-fit: cover;
-    }
 
     .diving-container h3 {
         display: block;
@@ -152,5 +152,6 @@
 
     .diving-description p{
         word-break: break-word;
+        width: auto;
     }
 }

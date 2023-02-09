@@ -67,6 +67,10 @@
     position: relative;
 }
 
+.packages-image img{
+    width: 100%;
+}
+
 .packages-description p{
     width: 28ch;
     color: #cecccc;
@@ -97,10 +101,11 @@
 
 @media (max-width: 400px){
     .packages-image img{
-        object-fit: cover;
+        object-fit: fill;
     }
 
     .packages-description p{
         word-break: break-word;
+        width: auto;
     }
 }
