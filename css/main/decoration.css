@@ -1,0 +1,40 @@
+.decoration-bg{
+    background: url("../../imgs/decoration/decoration-bg.svg") no-repeat center;
+    background-size: cover;
+}
+
+.decoration-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.decoration-content h2{
+    font-size: 2.75rem;
+    width: 20ch;
+}
+
+.decoration-content p{
+    font-size: 1.2rem;
+    width: 30ch;
+}
+
+.decoration-content a{
+    background-color: #0D8587;
+    padding: 20px 30px;
+    border-radius: 4px;
+    width: max-content;
+}
+
+.decoration-content a:hover{
+    background-color: #166064;
+}
+
+@media (max-width: 800px){
+    .decoration-bg{
+        display: none;
+    }
+}
