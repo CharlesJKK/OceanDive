@@ -1,0 +1,141 @@
+.footer-bg{
+    background: #232323;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.footer h2{
+    color: #C5FBD8;
+}
+
+.footer p,
+.footer a{
+    color: #C1C7CD;
+}
+
+.footer-nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+}
+
+.footer-nav h2{
+    max-width: max-content;
+    height: max-content;
+}
+
+.footer-links{
+    display: grid;
+    gap: 10px;
+    max-width: max-content;
+    height: max-content;
+}
+
+.footer-links ul{
+    display: grid;
+    gap: 12px;
+}
+
+.footer-links ul li{
+    font-family: 'Poppins', serif;
+    font-weight: 500;
+}
+
+.footer-newsletter{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.newsletter-text h2{
+    line-height: 2;
+}
+
+.newsletter-text p{
+    max-width: 60ch;
+    line-height: 1.5;
+}
+
+.newsletter-input{
+    display: flex;
+    height: max-content;
+    flex: 1;    
+    align-self: center;
+    gap: 8px;
+}
+
+.newsletter-input input{
+    flex: 1;
+    padding: 20px 20px 20px 20px;
+    border-radius: 4px;
+}
+
+.newsletter-input a{
+    flex: 1;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    color: #fff;
+    background-color: #0D8587;
+    border-radius: 4px;
+}
+
+.footer-end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.footer-end::before{
+    content: "";
+    width: 100%;
+    border: 1px solid #346769;
+    position: absolute;
+    top: 0;
+}
+
+.footer-networks{
+    display: flex;
+    gap: 18px;
+}
+
+@media (max-width: 1200px){
+    .footer-newsletter{
+        grid-template-columns: 1fr;
+    }    
+
+}
+
+@media (max-width: 800px){
+    .footer-nav{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-nav h2{
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 600px){
+    .footer-nav{
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-input{
+        flex-direction: column;
+    }
+
+    .footer-end{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
