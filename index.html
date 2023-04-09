@@ -17,13 +17,17 @@
         <a href="./">
             <img src="./imgs/logo.svg" alt="ícone oceandive">
         </a>
-        <nav aria-label="primaria">
-            <ul class="header-menu">
+        <nav aria-label="primaria" class="dropdown">
+            <div class="select">
+                <span class="buttonheader selected">Menu</span>
+                <div class="caret"></div>
+            </div>
+            <ul class="header-menu menu">
                 <li><a href="#servicos" class="buttonheader">Serviços</a></li>
                 <li><a href="#pacotes" class="buttonheader">Pacotes</a></li>
                 <li><a href="#perguntas" class="buttonheader">Perguntas</a></li>
                 <li><a href="./" class="buttonheader">Sobre nós</a></li>
-                <li><a href="./" class="buttonheader">ENTRAR</a></li>
+                <li><a href="./" class="buttonheader">SAIR</a></li>
             </ul>
         </nav>
     </header>
@@ -330,4 +334,5 @@
         </div>
     </footer>
 </body>
+<script src="./script.js"></script>
 </html>
