@@ -19,15 +19,63 @@
     word-break: break-word;
 }
 
-.testimony-content > p{
-    font-size: 1.25rem;
-    line-height: 1.5;
-    width: 35ch;
-}
-
 .testimony-rating{
     display: flex;
     gap: 12px;
+}
+
+.container-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container-images{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+}
+
+.slider{
+    display: none;
+}
+
+.on{
+    display: initial;;
+    padding-top: 40px;
+    position: absolute;
+}
+
+.slider > p{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+#prev-button img,
+#next-button img{
+    width: 60%;
+    height: 60%;
+}
+
+.container-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    min-height: 500px;
 }
 
 @media (max-width: 800px){
@@ -42,10 +90,14 @@
         gap: 20px;
     }
 
+    .slider > p{
+        font-size: 1.5rem;
+    }
+
 }
 
 @media (max-width: 600px){
-    .testimony-content > p{
+    .slider > p{
         font-size: 1.0rem;
         width: initial;
         word-break: break-word;
