@@ -70,19 +70,3 @@ function prevSlider(){
 
 btnNext.addEventListener('click', nextSlider)
 btnPrev.addEventListener('click', prevSlider)
-
-
-//Deslogar
-
-if (localStorage.getItem("token") == null) {
-    alert("Você precisa estar logado para acessar essa página");
-    window.location.href = "./signin.html";
-  }
-  
-  const userLogado = JSON.parse(localStorage.getItem("userLogado"));
-  
-  function sair() {
-    localStorage.removeItem("token");
-    localStorage.removeItem("userLogado");
-    window.location.href = "./signin.html";
-  }
